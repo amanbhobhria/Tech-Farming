@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/miItem1"
+        android:title="E-Commerce" />
+    <item
+        android:id="@+id/miItem2"
+        android:title="APMC Updates" />
+    <item
+        android:id="@+id/miItem3"
+        android:title="Create Post" />
+    <item
+        android:id="@+id/miItem4"
+        android:title="Community Network" />
+    <item
+        android:id="@+id/miItem5"
+        android:title="Weather Forecast" />
+    <item
+        android:id="@+id/miItem6"
+        android:title="Fruits Articles" />
+    <item
+        android:id="@+id/miItem7"
+        android:title="My Orders" />
+    <item
+        android:id="@+id/miItem8"
+        android:title="Log Out" />
+
+
+</menu>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="chip">
+        <selector xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:state_checked="true"
+                android:color="@color/colorPrimary" />
+            <item android:state_checked="false"
+                android:color="@color/secondary" />
+        </selector>
+    </color>
+
+
+    <color name="colorPrimary">#79C551</color>
+    <color name="colorPrimaryDark">#654321</color>
+    <!--    <color name="colorPrimaryDark">#79C551</color>-->
+    <color name="colorAccent">#FFF</color>
+    <color name="greenlite">#F56ADA23</color>
+    <color name="secondary">#E2F2DA</color>
+    <color name="semiTransparentColor">#80FFFFFF</color>
+    <color name="fontColor">#FF404A3A</color>
+    <color name="secondary2">#88d498</color>
+    <color name="secondary3">#c6dabf</color>
+    <color name="colorThird">#fc7557</color>
+    <color name="greenDark">#359701</color>
+
+
+</resources>

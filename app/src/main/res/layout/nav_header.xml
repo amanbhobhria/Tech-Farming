@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/colorPrimary"
+    android:gravity="bottom"
+    android:orientation="horizontal">
+
+
+
+  <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+
+      android:id="@id/circularRevealCardView"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:background="#f00"
+      app:cardCornerRadius="50dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.06"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.32999998"
+      >
+
+
+
+    <ImageView
+        android:id="@+id/navbarUserImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/ic_user_profile"
+        android:scaleType="fitXY" />
+
+  </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/circularRevealCardView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/navbarUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:text="abc@example.com"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintStart_toStartOf="@+id/circularRevealCardView"
+        app:layout_constraintTop_toBottomOf="@+id/circularRevealCardView" />
+
+    <TextView
+        android:id="@+id/navbarUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:text="User Name"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/cityTextNavHeader"
+        app:layout_constraintStart_toEndOf="@+id/circularRevealCardView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cityTextNavHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:text="City"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/navBarUserPostCount"
+        app:layout_constraintStart_toStartOf="@+id/navbarUserName"
+        app:layout_constraintTop_toBottomOf="@+id/navbarUserName" />
+
+    <TextView
+        android:id="@+id/navBarUserPostCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:gravity="right"
+        android:text="Posts Count"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/circularRevealCardView"
+        app:layout_constraintStart_toStartOf="@+id/cityTextNavHeader" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
